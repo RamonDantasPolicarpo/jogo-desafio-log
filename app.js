@@ -1,5 +1,5 @@
 let listaNumSorteados = [];
-let numeroMaximo = 2;
+let numeroMaximo = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -9,7 +9,7 @@ function inserirTextos(tag, texto) {
      if ('speechSynthesis' in window) {
         let utterance = new SpeechSynthesisUtterance(texto);
         utterance.lang = 'pt-BR'; 
-        utterance.rate = 1; 
+        utterance.rate = 1.5; 
         window.speechSynthesis.speak(utterance); 
     } else {
         console.log("Web Speech API não suportada neste navegador.");
