@@ -18,7 +18,7 @@ function inserirTextos(tag, texto) {
  
 function mensagemInicial() {
     inserirTextos ('h1', 'Jogo do número secreto');
-    inserirTextos ('p', 'Escolha um número entre 1 e 10');
+    inserirTextos ('p', `Escolha um número entre 1 e ${numeroMaximo}`);
 }
 
 mensagemInicial();
